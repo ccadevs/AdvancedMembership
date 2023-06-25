@@ -1,0 +1,127 @@
+/* == Progress == */
+.ccwebspot.progress {
+    width: 100%;
+    height: 1.5rem;
+    background: var(--grey-color-300);
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: .250rem;
+  }
+  .ccwebspot.progress .bar {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: var(--grey-color);
+    border-radius: .250rem;
+    z-index: 1;
+  }
+  .ccwebspot.progress .label {
+    font-weight: 700;
+    margin-top: .250em;
+    text-align: center;
+    font-size: .875rem;
+  }
+  .ccwebspot.progress .tipWrap {
+    display: none;
+  }
+  .ccwebspot.progress .tip {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-50%);
+    right: .5rem;
+    font-size: .750rem;
+    font-weight: 600;
+    top: 50%;
+    color: rgba(255,255,255,0.7)
+  }
+  /* == Colors == */
+  .ccwebspot.primary.progress .bar {
+    background: var(--primary-color);
+  }
+  .ccwebspot.secondary.progress .bar {
+    background: var(--secondary-color);
+  }
+  .ccwebspot.positive.progress .bar {
+    background: var(--positive-color);
+  }
+  .ccwebspot.negative.progress .bar {
+    background: var(--negative-color);
+  }
+  .ccwebspot.dark.progress .bar {
+    background: var(--dark-color);
+  }
+  .ccwebspot.transparent.progress .bar {
+    background-color: rgba(255,255,255,0.5)
+  }
+  /* == Types == */
+  .ccwebspot.active.progress .bar::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #ffffff;
+    border-radius: .250rem;
+    -webkit-animation: progress-active 2s ease infinite;
+    animation: progress-active 2s ease infinite;
+  }
+  @-webkit-keyframes progress-active {
+   0% {
+   opacity: 0.3;
+   width: 0;
+  }
+   100% {
+   opacity: 0;
+   width: 100%;
+  }
+  }
+  @keyframes progress-active {
+   0% {
+   opacity: 0.3;
+   width: 0;
+  }
+   100% {
+   opacity: 0;
+   width: 100%;
+  }
+  }
+  /* == Variations == */
+  .ccwebspot.progress.attached {
+    background: transparent;
+    position: absolute;
+    border: none;
+    margin: 0;
+    left:0;
+  }
+  .ccwebspot.progress.attached,
+  .ccwebspot.progress.attached .bar {
+    overflow: hidden;
+    border-radius: 0;
+  }
+  .ccwebspot.progress.attached .bar {
+    border-radius: 0;
+  }
+  .ccwebspot.progress.top.attached,
+  .ccwebspot.progress.top.attached .bar {
+    top: 0;
+  }
+  .ccwebspot.progress.bottom.attached,
+  .ccwebspot.progress.bottom.attached .bar {
+    bottom: 0;
+  }
+  .ccwebspot.progress.fitted {
+    margin-bottom:0
+  }
+  /* == Sizes == */
+  .ccwebspot.tiny.progress {
+    height: .25rem;
+  }
+  .ccwebspot.mini.progress {
+    height: .5rem;
+  }
+  .ccwebspot.small.progress {
+    height: 1rem;
+  }

@@ -1,0 +1,1429 @@
+/* == Form == */
+.ccwebspot.form {
+    position: relative;
+    max-width: 100%;
+  }
+  /* == Labels == */
+  .ccwebspot.form .field > label,
+  .ccwebspot.form .field label.label {
+    display: block;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+    color: var(--body-color);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .ccwebspot.form .field label .icon.asterisk {
+    font-size: .750em;
+    vertical-align: middle;
+    color: var(--alert-color);
+  }
+  /* == Inputs == */
+  .ccwebspot.form textarea,
+  .ccwebspot.file > input,
+  .ccwebspot.form input:not([type]),
+  .ccwebspot.form input[type="date"],
+  .ccwebspot.form input[type="datetime-local"],
+  .ccwebspot.form input[type="email"],
+  .ccwebspot.form input[type="number"],
+  .ccwebspot.form input[type="password"],
+  .ccwebspot.form input[type="search"],
+  .ccwebspot.form input[type="tel"],
+  .ccwebspot.form input[type="time"],
+  .ccwebspot.form input[type="text"],
+  .ccwebspot.form input[type="url"] {
+    width: 100%;
+    font-family: inherit;
+    margin: 0em;
+    outline: none;
+    -webkit-appearance: none;
+    tap-highlight-color: rgba(255, 255, 255, 0);
+    line-height: normal;
+    vertical-align: middle;
+    padding: .875rem 1.5rem;
+    font-size: 1rem;
+    height: calc(1.750rem + 1rem + 2px);
+    background: #fff;
+    border: 0px solid var(--grey-color-300);
+    color: var(--body-color);
+    border-radius: .250rem;
+    font-weight: 400;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    transition: all 0.15s ease 0s;
+  }
+  .ccwebspot.form textarea:not([rows]) {
+    height: 12em;
+    min-height: 8em;
+    max-height: 24em;
+  }
+  .ccwebspot.form input.basic {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom-color: var(--grey-color-500);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    padding: 1rem 0;
+  }
+  /* == Focus == */
+  .ccwebspot.form textarea:focus,
+  .ccwebspot.form input:not([type]):focus,
+  .ccwebspot.form input[type="date"]:focus,
+  .ccwebspot.form input[type="datetime-local"]:focus,
+  .ccwebspot.form input[type="email"]:focus,
+  .ccwebspot.form input[type="number"]:focus,
+  .ccwebspot.form input[type="password"]:focus,
+  .ccwebspot.form input[type="search"]:focus,
+  .ccwebspot.form input[type="tel"]:focus,
+  .ccwebspot.form input[type="time"]:focus,
+  .ccwebspot.form input[type="text"]:focus,
+  .ccwebspot.form input[type="url"]:focus,
+  .ccwebspot.form input[type="text"]:focus,
+  .ccwebspot.form select:focus {
+    color: var(--dark-color);
+    border-color: var(--primary-color);
+    border-radius: 0.250rem;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234,.5);
+  }
+  .ccwebspot.form textarea.basic:focus,
+  .ccwebspot.form input.basic:not([type]):focus,
+  .ccwebspot.form input.basic[type="date"]:focus,
+  .ccwebspot.form input.basic[type="datetime-local"]:focus,
+  .ccwebspot.form input.basic[type="email"]:focus,
+  .ccwebspot.form input.basic[type="number"]:focus,
+  .ccwebspot.form input.basic[type="password"]:focus,
+  .ccwebspot.form input.basic[type="search"]:focus,
+  .ccwebspot.form input.basic[type="tel"]:focus,
+  .ccwebspot.form input.basic[type="time"]:focus,
+  .ccwebspot.form input.basic[type="text"]:focus {
+    color: var(--dark-color);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    box-shadow: none;
+  }
+  /* == Placeholder == */
+  .ccwebspot.form ::-webkit-input-placeholder {
+   color: var(--grey-color-500);
+  }
+  .ccwebspot.form :-ms-input-placeholder {
+   color: var(--grey-color-500);
+  }
+  .ccwebspot.form ::-moz-placeholder {
+   color: var(--grey-color-500);
+  }
+  .ccwebspot.form :focus::-webkit-input-placeholder {
+   color: var(--grey-color-700);
+  }
+  .ccwebspot.form :focus:-ms-input-placeholder {
+   color: var(--grey-color-700);
+  }
+  .ccwebspot.form :focus::-moz-placeholder {
+   color: var(--grey-color-700);
+  }
+  .ccwebspot.form input:-webkit-autofill {
+   box-shadow: 0px 0px 0px 100px #fff inset;
+   border-color: #fff;
+  }
+  .ccwebspot.form input:-webkit-autofill:focus {
+   box-shadow: 0px 0px 0px 100px #fff inset;
+   border-color: #fff;
+  }
+  /* == Select == */
+  .ccwebspot.form select {
+    font-family: inherit;
+    display: inline-block;
+    width: 100%;
+    color: var(--dark-color);
+    line-height: 1rem;
+    padding: 0 2rem 0 1.5rem;
+    font-size: 1rem;
+    height: calc(1.875rem + 1rem);
+    border: 0px solid var(--grey-color-300);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='103.6 142.1 316.8 203.7' %3E%3Cpath fill='%23212529' d='M414.4 193.4l-158.4 158.4-158.4-158.4 45.3-45.3 113.1 113.2 113.1-113.1 45.3 45.2z'/%3E%3C/svg%3E") no-repeat right 1rem center;
+    background-size: auto auto;
+    background-size: 10px 8px;
+    border-radius: 0.250rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    transition: all 0.15s ease 0s;
+  }
+  .ccwebspot.form select.basic {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid var(--grey-color-500);
+    border-radius: 0;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .ccwebspot.form select:focus {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234,.5);
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='103.6 142.1 316.8 203.7' %3E%3Cpath fill='%23212529' d='M420.4,300.5l-45.3,45.2L262,232.6L148.9,345.8l-45.3-45.3L262,142.1L420.4,300.5L420.4,300.5z'/%3E%3C/svg%3E") no-repeat right 1rem center;
+    background-size: auto auto;
+    background-size: 10px 8px;
+  }
+  .ccwebspot.form select option {
+    font-size: .913rem;
+  }
+  .ccwebspot.form select:-moz-focusring {
+    color:transparent;
+    text-shadow:0 0 0 var(--dark-color)
+  }
+  .ccwebspot.form select:-moz-focusring * {
+    color:var(--dark-color);
+    text-shadow:none;
+  }
+  /* == File Upload == */
+  .ccwebspot.file {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+  .ccwebspot.file > input,
+  .ccwebspot.file > div {
+    flex: 1 1 0px;
+    min-width: 0;
+  }
+  .ccwebspot.file > div {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .ccwebspot.file > div .label {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    font-size: .750rem;
+    width: 1rem;
+    height: 1rem;
+    font-weight: 500;
+    border-radius: .250rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: var(--dark-color-shadow);
+    box-shadow: 1px 1px 0 0 rgba(255,255,255,0.1);
+  }
+  /* == Checkbox == */
+  .ccwebspot.checkbox {
+    position: relative;
+    padding: 0 0 0 2.5rem;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 1.5em;
+  }
+  .ccwebspot.checkbox.inline {
+    display: inline-flex;
+    margin-right: 1.5em;
+  }
+  .ccwebspot.checkbox.inline > * {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  .ccwebspot.checkbox label {
+    cursor: pointer;
+    color: var(--grey-color-500);
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .ccwebspot.checkbox label::before,
+  .ccwebspot.checkbox label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+  }
+  .ccwebspot.checkbox.radio label::before,
+  .ccwebspot.checkbox.radio label::after {
+    border-radius: 50%;
+  }
+  .ccwebspot.checkbox label::before {
+    left: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #fff;
+    border: 2px solid var(--grey-color-300);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .ccwebspot.checkbox label::after {
+    left: .1250rem;
+    width: 1rem;
+    height: 1rem;
+    margin: -.5rem 0 0;
+    opacity: 0;
+    background: var(--primary-color);
+    -webkit-transform: translate3d(-20px, 0, 0) scale(0.5);
+    transform: translate3d(-20px, 0, 0) scale(0.5);
+    transition: all .35s ease;
+  }
+  .ccwebspot.checkbox.radio label::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .ccwebspot.checkbox.radio label::after {
+    left: .250rem;
+  }
+  .ccwebspot.checkbox.small label::before {
+    width: 1rem;
+    height: 1rem;
+  }
+  .ccwebspot.checkbox.small label::after {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: -.35rem 0 0;
+  }
+  .ccwebspot.checkbox input[type="radio"],
+  .ccwebspot.checkbox input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    visibility: hidden;
+  }
+  .ccwebspot.checkbox input[type="radio"]:checked + label:after,
+  .ccwebspot.checkbox input[type="checkbox"]:checked + label:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all .20s ease;
+  }
+  /* == Toggle == */
+  .ccwebspot.toggle.checkbox {
+    padding: 0 0 0 3.5rem;
+  }
+  .ccwebspot.toggle.checkbox label::before,
+  .ccwebspot.toggle.checkbox label::after {
+    content: "";
+    position: absolute;
+    margin: 0;
+    outline: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    transition: all 0.3s ease;
+  }
+  .ccwebspot.toggle.checkbox label::before {
+    left: 0;
+    width: 2.5rem;
+    height: .875rem;
+    background-color: var(--grey-color-300);
+    border-radius: .5rem;
+    border: 0;
+  }
+  .ccwebspot.toggle.checkbox label::after {
+    left: 0;
+    opacity: 1;
+    width: 1.250rem;
+    height: 1.250rem;
+    background-color: #fff;
+    border: 1px solid var(--grey-color-300);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.1);
+  }
+  .ccwebspot.toggle.checkbox input[type="radio"]:checked + label:before,
+  .ccwebspot.toggle.checkbox input[type="checkbox"]:checked + label:before {
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.toggle.checkbox input[type="radio"]:checked + label:after,
+  .ccwebspot.toggle.checkbox input[type="checkbox"]:checked + label:after {
+    border-color: var(--primary-color);
+    -webkit-transform: translate(90%, -50%);
+    transform: translate(90%, -50%);
+  }
+  .ccwebspot.checkbox input[type="radio"]:checked + label,
+  .ccwebspot.checkbox input[type="checkbox"]:checked + label {
+    color: var(--body-color)
+  }
+  .ccwebspot.checkbox.fitted {
+    margin-bottom: 0
+  }
+  /* == Image Select == */
+  .wavatar-dropzone {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid var(--grey-color-300);
+    border-radius: .250rem;
+    padding: 0px;
+    margin: 0 auto;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+  }
+  .wavatar-dropzone > div {
+    flex: 1 1 0px;
+    min-width: 0;
+    cursor: pointer;
+  }
+  .wavatar-dropzone img {
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: middle;
+    border-radius: .250em;
+    z-index: 3
+  }
+  .wavatar-dropzone [type="file"] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0
+  }
+  .wavatar-focus,
+  .wavatar-dropzone:hover {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 3px 9px var(--shadow-color), 3px 4px 8px var(--shadow-color);
+  }
+  .wavatar-accept {
+    color: var(--positive-color);
+    border: 1px solid var(--positive-color);
+  }
+  .wavatar-enter {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  .wavatar-reject {
+    color: var(--negative-color);
+    border: 1px solid var(--negative-color);
+  }
+  /* == Color Picker == */
+  .ccwebspot.color.picker {
+    background: #fff;
+    position: absolute;
+    border-radius: .250rem;
+    border: 1px solid var(--grey-color-300);
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    padding: 1rem;
+    z-index: 1500;
+    transition: all linear .2s;
+  }
+  .ccwebspot.color.picker h5 {
+    font-size: .750rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--body-color);
+    margin-bottom: .5rem;
+  }
+  .ccwebspot.color.picker .items {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -.250rem;
+  }
+  .ccwebspot.color.picker .ccwebspot.mini.input {
+    margin: .5rem 0;
+  }
+  .ccwebspot.color.picker .row {
+    margin-top: 1rem;
+  }
+  .ccwebspot.color.picker .ccwebspot.mini.input.error {
+    border: 1px solid var(--negative-color);
+  }
+  .ccwebspot.color.picker .ccwebspot.mini.input.error input {
+    color: var(--negative-color);
+  }
+  .ccwebspot.color.picker .items .item {
+    border-radius: .250rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    flex: 1 1 0px;
+    min-width: 0;
+    margin-left: .250rem;
+    margin-bottom: .250rem;
+  }
+  .ccwebspot.color.picker .items .item:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .ccwebspot.color.picker .button[data-close] {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+  .ccwebspot.color.picker .colorPickDummy {
+    background: #fff;
+    border: 1px dashed var(--grey-color-300);
+  }
+  /* == Date Picker == */
+  .ccwebspot.calendar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: transparent;
+    transition: background-color .2s linear, opacity .2s ease;
+    z-index: 1200;
+    overflow: hidden;
+  }
+  .ccwebspot.calendar.active {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.75);
+  }
+  .ccwebspot.calendar.inactive {
+    opacity: 0;
+    background-color: transparent;
+  }
+  .ccwebspot.calendar .container {
+    line-height: normal;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    min-width: 280px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: .250rem;
+    -webkit-transform: translateX(-50%) scale(1.05) perspective(1px);
+    transform: translateX(-50%) scale(1.05) perspective(1px);
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    transition: opacity .25s ease, -webkit-transform .25s ease;
+    transition: transform .25s ease, opacity .25s ease;
+    transition: transform .25s ease, opacity .25s ease, -webkit-transform .25s ease;
+  }
+  .ccwebspot.calendar.active .container {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .ccwebspot.calendar .header {
+    padding: 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.calendar .header .current.year {
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .ccwebspot.calendar .header .current.year:hover {
+    color: #fff;
+  }
+  .ccwebspot.calendar .header .current.date {
+    font-size: 1.875rem;
+    font-weight: 300;
+  }
+  .ccwebspot.calendar .content {
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    flex: 0 1 auto;
+  }
+  .ccwebspot.calendar .content .prev.link,
+  .ccwebspot.calendar .content .next.link {
+    position: absolute;
+    top: .5rem;
+    left: .875rem;
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: .250rem;
+    opacity: 1;
+    transition: opacity .25s ease, background-color .25s linear;
+    z-index: 2;
+  }
+  .ccwebspot.calendar .content .next.link {
+    left: auto;
+    right: .875rem;
+  }
+  .ccwebspot.calendar .content .prev.link:hover,
+   .ccwebspot.calendar .content .next.link:hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.calendar .content .prev.link:active,
+   .ccwebspot.calendar .content .next.link:active {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .content .views {
+    width: 1200px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity .25s ease;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .ccwebspot.calendar .content .sections {
+    padding: 0 1rem .750rem;
+    -webkit-transform: translateX(-100%) perspective(1px);
+    transform: translateX(-100%) perspective(1px);
+    transition: none;
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+  .ccwebspot.calendar .content .sections.animate-left {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+    transition: -webkit-transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .25s cubic-bezier(0.4, 0.0, 0.2, 1), -webkit-transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  .ccwebspot.calendar .content .sections.animate-right {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: -webkit-transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .25s cubic-bezier(0.4, 0.0, 0.2, 1), -webkit-transform .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  .ccwebspot.calendar .sections .heading {
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem 0;
+  }
+  .ccwebspot.calendar .sections .weekdays {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+    background-color: var(--grey-color-100);
+    padding: .5rem 0;
+    border-top: 1px solid var(--grey-color-300);
+    border-bottom: 1px solid var(--grey-color-300);
+  }
+  .ccwebspot.calendar .sections .weekdays span {
+    text-align: center;
+    font-size: .750rem;
+    flex: 0 0 Calc(100% / 7);
+    max-width: Calc(100% / 7);
+    font-weight: 700;
+  }
+  .ccwebspot.calendar .sections .week {
+    display: flex;
+    flex-direction: row;
+  }
+  .ccwebspot.calendar .sections .week .item {
+    flex: 0 0 Calc(100% / 7);
+    max-width: Calc(100% / 7);
+    text-decoration: none;
+    text-align: center;
+    font-size: .875rem;
+    outline: none;
+    cursor: pointer;
+    padding: 1.125rem .5rem;
+    line-height: 1rem;
+    position: relative;
+    transition: background-color .2s linear;
+  }
+  .ccwebspot.calendar .sections .week .pm,
+  .ccwebspot.calendar .sections .week .nm {
+    color: var(--grey-color-500);
+  }
+  .sections .week .item.disabled {
+    cursor: not-allowed;
+    color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .sections .week .item:not(.disabled):not(.selected):hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.calendar .sections .week .item:not(.disabled):not(.selected):active {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .sections .week .item.current {
+    color: var(--primary-color);
+    background-color: var(--grey-color-300);
+    font-weight: 500;
+  }
+  .ccwebspot.calendar .sections .week .item.pm,
+  .dudp__cal-dates .item.nm {
+    color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .sections .week .item.selected {
+    font-weight: normal;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: .250rem;
+  }
+  .ccwebspot.calendar .sections .week .item.selected::before,
+  .ccwebspot.calendar .months .month.selected::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-left: 6px solid transparent;
+  }
+  .ccwebspot.calendar .content .months {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    opacity: 1;
+    -webkit-transform: scale(1) perspective(1px);
+    transform: scale(1) perspective(1px);
+    transition: opacity .25s ease, -webkit-transform .25s ease;
+    transition: transform .25s ease, opacity .25s ease;
+    transition: transform .25s ease, opacity .25s ease, -webkit-transform .25s ease;
+  }
+  .ccwebspot.calendar .months .month-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .ccwebspot.calendar .months .month {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: .250rem;
+    padding: 1rem;
+    position: relative;
+    transition: background-color .2s linear;
+  }
+  .ccwebspot.calendar .months .month:hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.calendar .months .month:active {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .months .month.selected {
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.calendar .content .years {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity .25s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .ccwebspot.calendar .years .year {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .2s linear;
+  }
+  .ccwebspot.calendar .years .year:hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.calendar .years .year:active {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .years .year.selected {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.calendar .content .actions {
+    padding: 0 .875rem .875rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .ccwebspot.calendar .content .actions .button {
+    font-size: .875rem;
+    padding: 0 1rem;
+    min-width: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-color);
+    border-radius: .250rem;
+    border: 0;
+    background-color: #fff;
+    transition: background-color .2s linear;
+  }
+  .ccwebspot.calendar .content .actions .button.clear {
+    color: var(--negative-color);
+  }
+  .ccwebspot.calendar .content .actions .button.today {
+    color: var(--positive-color);
+  }
+  .ccwebspot.calendar .content .actions .button:hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.calendar .content .actions .button:active {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.calendar .content .months.is-hidden,
+  .ccwebspot.calendar .content .prev.link.is-hidden,
+   .ccwebspot.calendar .content .next.link.is-hidden,
+   .ccwebspot.calendar .content .views.is-hidden,
+   .ccwebspot.calendar .content .years.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .ccwebspot.calendar .content .months.is-out {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  .ccwebspot.calendar .content .views.is-out {
+    opacity: 0;
+  }
+  body[datepicker-display='on'] {
+    overflow: hidden;
+  }
+  /* == Time Picker == */
+  .ccwebspot.time.picker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    transition: background-color .28s ease;
+    z-index: 1200;
+  }
+  .ccwebspot.time.picker.hidden {
+    display: none;
+  }
+  .ccwebspot.time.picker.animate {
+    background-color: transparent;
+  }
+  .ccwebspot.time.picker .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    min-width: 280px;
+    opacity: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: .250rem;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    transition: opacity .28s ease, -webkit-transform .28s ease;
+    transition: transform .28s ease, opacity .28s ease;
+    transition: transform .28s ease, opacity .28s ease, -webkit-transform .28s ease;
+    overflow: hidden;
+  }
+  .ccwebspot.time.picker .container.animate {
+    -webkit-transform: translateX(-50%) scale(1.05);
+    transform: translateX(-50%) scale(1.05);
+    opacity: 0;
+  }
+  .ccwebspot.time.picker .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.time.picker .header > span {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    line-height: 3rem;
+    cursor: default;
+  }
+  .ccwebspot.time.picker .header > span:not(.separator):not(.ampm) {
+    cursor: pointer;
+    margin: 0 .250rem;
+  }
+  .ccwebspot.time.picker .header .hour.active,
+  .ccwebspot.time.picker .header .minute.active {
+    color: #fff;
+  }
+  .ccwebspot.time.picker .header .ampm {
+    font-size: 1.5rem;
+  }
+  .ccwebspot.time.picker .content {
+    position: relative;
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+  .ccwebspot.time.picker .content .section {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1.5rem;
+    border-radius: .250rem;
+  }
+  .ccwebspot.time.picker .content .section .button.am,
+  .ccwebspot.time.picker .content .section .button.pm {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+  .ccwebspot.time.picker .content .section .button.am {
+    left: 0;
+  }
+  .ccwebspot.time.picker .content .section .button.pm {
+    right: 0;
+  }
+  .ccwebspot.time.picker .content .section .dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: .375rem;
+    background-color: var(--grey-color-300);
+    border-radius: 50%;
+  }
+  .ccwebspot.time.picker .content .section .hours,
+  .ccwebspot.time.picker .content .section .minutes {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: opacity .35s ease, -webkit-transform .35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .35s ease;
+    transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .35s ease, -webkit-transform .35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    overflow: hidden;
+  }
+  .ccwebspot.time.picker .content .section .hours.animate {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  .ccwebspot.time.picker .content .section .minutes.animate {
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    opacity: 0;
+  }
+  .ccwebspot.time.picker .content .section .hours.hidden,
+  .ccwebspot.time.picker .content .section .minutes.hidden {
+    display: none;
+  }
+  .ccwebspot.time.picker .content .section .digit {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    margin-top: -1.5rem;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+    z-index: 1;
+  }
+  .ccwebspot.time.picker .content .section .digit span {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: .250rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color .28s, color .14s;
+  }
+  .ccwebspot.time.picker .content .section .digit span small {
+    line-height: 1rem;
+    display: block;
+    font-size: .750rem;
+    font-weight: 400;
+  }
+  .ccwebspot.time.picker .content .section .minutes .digit:not(.marker) {
+    margin-top: -.5rem;
+    height: .750rem;
+  }
+  .ccwebspot.time.picker .content .section .minutes .digit:not(.marker) span {
+    width: .5rem;
+    height: .5rem;
+    line-height: .5rem;
+    margin-left: 2rem;
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.time.picker .content .section .digit.active span,
+  .ccwebspot.time.picker .content .section .minutes .digit.active:not(.marker) span,
+  .ccwebspot.time.picker .content .section .minutes .digit:not(.marker) span:hover,
+  .ccwebspot.time.picker .content .section .digit span:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    z-index: 2;
+    -webkit-transform: scale(1.75);
+    transform: scale(1.75);
+  }
+  .ccwebspot.time.picker .content .section .minutes .digit.marker {
+    margin-top: -.750rem;
+  }
+  .ccwebspot.time.picker .content .section .minutes .digit.marker span {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .ccwebspot.time.picker .actions {
+    margin: 0 -1rem -1rem;
+    text-align: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .ccwebspot.time.picker .actions .button {
+    font-size: .875rem;
+    padding: 0 1rem;
+    min-width: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-color);
+    border-radius: .250rem;
+    border: 0;
+    background-color: #fff;
+    transition: background-color .2s linear;
+  }
+  .ccwebspot.time.picker .actions .button.cancel {
+    color: var(--negative-color);
+  }
+  .ccwebspot.time.picker .actions .button.now {
+    color: var(--positive-color);
+  }
+  .ccwebspot.time.picker .actions .button:hover {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.time.picker .actions .button:active {
+    background-color: var(--grey-color-500);
+  }
+  body[timepicker-display='on'] {
+    overflow: hidden;
+  }
+  /* == Range Slider == */
+  .ccwebspot.range,
+  .ccwebspot.range .fill {
+    border-radius: .250rem;
+  }
+  .ccwebspot.range {
+    background: var(--grey-color-300);
+    position: relative;
+  }
+  .ccwebspot.range.horizontal {
+    height: .5rem;
+    width: 100%;
+  }
+  .ccwebspot.range.vertical {
+    width: 20px;
+    min-height: 150px;
+    max-height: 100%;
+    height: 100%;
+  }
+  .ccwebspot.range.disabled {
+    opacity: 0.4;
+  }
+  .ccwebspot.range .fill {
+    background: var(--primary-color);
+    position: absolute;
+  }
+  .ccwebspot.range.horizontal .fill {
+    top: 0;
+    height: 100%;
+  }
+  .ccwebspot.range.vertical .fill {
+    bottom: 0;
+    width: 100%;
+  }
+  .ccwebspot.range .handle {
+    cursor: pointer;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    background: #fff linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15), 0 0 0 1px rgba(34, 36, 38, 0.15) inset;
+    transition: background 0.3s ease;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .ccwebspot.range .handle:active,
+  .ccwebspot.range.active .handle {
+    background: #fff
+  }
+  .ccwebspot.range.horizontal .handle {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+  }
+  .ccwebspot.range.vertical .handle {
+    left: -10px;
+    touch-action: pan-x;
+    -ms-touch-action: pan-x;
+  }
+  .ccwebspot.range .counter {
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+    font-weight: 500;
+    font-size: .750rem;
+  }
+  .ccwebspot.range .labels {
+    width: 100%;
+    display: flex;
+    padding-top: .5rem;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .ccwebspot.range .labels .label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    padding-top: .5rem;
+  }
+  .ccwebspot.range .labels .label::before {
+    content: "";
+    height: .5em;
+    width: 1px;
+    background: var(--dark-color-shadow);
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .ccwebspot.range .labels .label:first-child::before {
+    left: 0;
+  }
+  .ccwebspot.range .labels .label:last-child::before {
+    right: 0;
+    left: auto;
+  }
+  /* == Sizes == */
+  .ccwebspot.small.range,
+  .ccwebspot.small.range .fill {
+    border-radius: .188rem;
+  }
+  .ccwebspot.small.range.horizontal {
+    height: .25rem;
+  }
+  .ccwebspot.small.range .handle {
+    width: 1rem;
+    height: 1rem;
+  }
+  /* == Loading == */
+  .ccwebspot.loading.form {
+    position: relative;
+    cursor: default;
+    pointer-events: none;
+  }
+  .ccwebspot.loading.form:before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .ccwebspot.loading.form:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin: -1.5em 0em 0em -1.5em;
+    width: 3em;
+    height: 3em;
+    -webkit-animation: form-spin 0.6s linear;
+    animation: form-spin 0.6s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 500rem;
+    border-color: rgba(0,0,0,.5) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0.2em;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0);
+    visibility: visible;
+    z-index: 11;
+  }
+  @-webkit-keyframes form-spin {
+   from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+  }
+   to {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+  }
+  @keyframes form-spin {
+   from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+  }
+   to {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+  }
+  /* == Editable == */
+  [data-editable=true] {
+    position: relative;
+  }
+  [data-editable=true]::after {
+    content: '';
+    position: absolute;
+    bottom: -.250rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed var(--grey-color-500)
+  }
+  .ccwebspot.editable {
+    background-color: #fff;
+    border: 0;
+    -webkit-appearance: none;
+    padding: .125rem 1rem!important;
+    outline: var(--primary-color) solid 2px;
+    outline-offset: 0px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  }
+  /* == Fields == */
+  .ccwebspot.fields {
+    display: flex;
+    flex-direction: row;
+    margin-left: -2em;
+  }
+  .ccwebspot.fields .field {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 2em;
+    margin-bottom: 2em;
+  }
+  .ccwebspot.fields .field.auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
+  }
+  .ccwebspot.block.fields {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .ccwebspot.block.fields .field {
+    flex: 0 1 auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    min-width: 0;
+    padding-left: 0;
+    margin-bottom: 2em;
+  }
+  .ccwebspot.fields .field.labeled > label {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .ccwebspot.fields .field > p {
+    margin-top: 1rem;
+  }
+  .ccwebspot.fields .field.one.wide {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+  .ccwebspot.fields .field.two.wide {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .ccwebspot.fields .field.three.wide {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .ccwebspot.fields .field.four.wide {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .ccwebspot.fields .field.five.wide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .ccwebspot.fields .field.six.wide {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .ccwebspot.fields .field.seven.wide {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .ccwebspot.fields .field.eight.wide {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .ccwebspot.fields .field.nine.wide {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .ccwebspot.inline.fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .ccwebspot.inline.fields .field {
+    flex: 0 1 auto;
+    margin-bottom: 0;
+  }
+  .ccwebspot.small.fields {
+    margin-left: -1em;
+  }
+  .ccwebspot.small.fields .field {
+    padding-left: 1em;
+    margin-bottom: 1em;
+  }
+  .ccwebspot.fields .basic.field {
+    margin-bottom: 0;
+  }
+  /* == Disabled == */
+  .ccwebspot.fields.disabled .field,
+  .ccwebspot.fields .field :disabled {
+    pointer-events: none;
+    opacity: 0.45;
+  }
+  .ccwebspot.fields .field.disabled label {
+    opacity: 0.45;
+  }
+  .ccwebspot.fields .field.disabled :disabled {
+    opacity: 1;
+  }
+  /* == Sizes == */
+  .ccwebspot.small.form textarea,
+  .ccwebspot.small.form input:not([type]),
+  .ccwebspot.small.form input[type="date"],
+  .ccwebspot.small.form input[type="datetime-local"],
+  .ccwebspot.small.form input[type="email"],
+  .ccwebspot.small.form input[type="number"],
+  .ccwebspot.small.form input[type="password"],
+  .ccwebspot.small.form input[type="search"],
+  .ccwebspot.small.form input[type="tel"],
+  .ccwebspot.small.form input[type="time"],
+  .ccwebspot.small.form input[type="text"],
+  .ccwebspot.small.form input[type="file"],
+  .ccwebspot.small.form input[type="url"] {
+    line-height: .875rem;
+    padding: 0 1.5rem;
+    font-size: .875rem;
+    height: calc(1.25rem + 1rem + 2px);
+  }
+  .ccwebspot.small.form textarea:not([rows]),
+  .ccwebspot.form textarea.small:not([rows]) {
+    height: 6em;
+    min-height: 4em;
+    max-height: 12em;
+    padding: 1rem 1.5rem;
+  }
+  .ccwebspot.tiny.form textarea:not([rows]),
+  .ccwebspot.form textarea.tiny:not([rows]) {
+    height: 3.188em;
+    min-height: 3.188em;
+    max-height: 12em;
+    padding: .5rem 1rem;
+  }
+  .ccwebspot.small.form input.basic {
+    padding: .875rem 0;
+  }
+  .ccwebspot.small.fields .field {
+    margin-bottom: 1rem;
+  }
+  .ccwebspot.small.form .ccwebspot.select > .counter,
+  .ccwebspot.small.select > .counter,
+  .ccwebspot.small.form select {
+    height: calc(1.25rem + 1rem + 2px);
+  }
+  .ccwebspot.small.form .ccwebspot.select > .counter > span,
+  .ccwebspot.small.select > .counter > span {
+    font-size: .875rem;
+    line-height: .875rem;
+    padding: .750rem 1.5rem;
+  }
+  .ccwebspot.small.form .ccwebspot.select > .menu > .options li.item,
+  .ccwebspot.small.select > .menu > .options li.item {
+    font-size: .875rem;
+  }
+  .ccwebspot.form {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width:48.063em) {
+  .ccwebspot.fields {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .ccwebspot.fields .field {
+    flex: 0 1 auto;
+    max-width: 100%;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    min-width: 0;
+    padding-left: 0
+  }
+  .ccwebspot.fields .field.one.wide,
+  .ccwebspot.fields .field.two.wide,
+  .ccwebspot.fields .field.three.wide,
+  .ccwebspot.fields .field.four.wide,
+  .ccwebspot.fields .field.five.wide,
+  .ccwebspot.fields .field.six.wide,
+  .ccwebspot.fields .field.seven.wide,
+  .ccwebspot.fields .field.eight.wide,
+  .ccwebspot.fields .field.nine.wide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .ccwebspot.fields .field.labeled {
+    margin-bottom: 0
+  }
+  .ccwebspot.fields .field.labeled > label {
+    text-align: left;
+    margin-bottom: .5rem;
+  }
+  .ccwebspot.inline.fields {
+    flex-direction: row;
+    align-items: center;
+    margin-left: -2em;
+  }
+  .ccwebspot.inline.fields .field {
+    flex: 0 1 auto;
+    padding-left: 2em;
+  }
+  }
+  

@@ -1,0 +1,847 @@
+/* == Button == */
+.ccwebspot.button {
+    cursor: pointer;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    vertical-align: middle;
+    background-color: #757575;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 0;
+    padding: .875rem 1.875rem;
+    line-height: 1rem;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: .250rem;
+    border: 1px solid #757575;
+    box-sizing: content-box;
+    user-select:none;
+    -webkit-tap-highlight-color: transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+  }
+  .ccwebspot.button:hover,
+  .ccwebspot.button:active,
+  .ccwebspot.button:focus {
+    color: #fff;
+    background: #616161;
+    border-color: #616161;
+  }
+  .ccwebspot.button:active,
+  .ccwebspot.button.active {
+    outline: 0 none;
+    box-shadow: none;
+  }
+  /* == basic == */
+  .ccwebspot.basic.buttons .button,
+  .ccwebspot.basic.button,
+  .ccwebspot.basic.primary.buttons .button,
+  .ccwebspot.basic.primary.button,
+  .ccwebspot.basic.secondary.buttons .button,
+  .ccwebspot.basic.secondary.button,
+  .ccwebspot.basic.positive.buttons .button,
+  .ccwebspot.basic.positive.button,
+  .ccwebspot.basic.negative.buttons .button,
+  .ccwebspot.basic.negative.button,
+  .ccwebspot.basic.white.buttons .button,
+  .ccwebspot.basic.white.button,
+  .ccwebspot.basic.light.buttons .button,
+  .ccwebspot.basic.light.button,
+  .ccwebspot.basic.dark.buttons .button,
+  .ccwebspot.basic.dark.button,
+  .ccwebspot.simple.buttons .button,
+  .ccwebspot.simple.button,
+  .ccwebspot.simple.primary.buttons .button,
+  .ccwebspot.simple.primary.button,
+  .ccwebspot.simple.secondary.buttons .button,
+  .ccwebspot.simple.secondary.button,
+  .ccwebspot.simple.positive.buttons .button,
+  .ccwebspot.simple.positive.button,
+  .ccwebspot.simple.negative.buttons .button,
+  .ccwebspot.simple.negative.button,
+  .ccwebspot.simple.white.buttons .button,
+  .ccwebspot.simple.white.button,
+  .ccwebspot.simple.light.buttons .button,
+  .ccwebspot.simple.light.button,
+  .ccwebspot.simple.dark.buttons .button,
+  .ccwebspot.simple.dark.button,
+  .ccwebspot.inverted.buttons .button,
+  .ccwebspot.inverted.button,
+  .ccwebspot.inverted.primary.buttons .button,
+  .ccwebspot.inverted.primary.button,
+  .ccwebspot.inverted.secondary.buttons .button,
+  .ccwebspot.inverted.secondary.button,
+  .ccwebspot.inverted.positive.buttons .button,
+  .ccwebspot.inverted.positive.button,
+  .ccwebspot.inverted.negative.buttons .button,
+  .ccwebspot.inverted.negative.button,
+  .ccwebspot.inverted.white.buttons .button,
+  .ccwebspot.inverted.white.button,
+  .ccwebspot.inverted.light.buttons .button,
+  .ccwebspot.inverted.light.button,
+  .ccwebspot.inverted.dark.buttons .button,
+  .ccwebspot.inverted.dark.button {
+    background: transparent;
+    box-shadow: none;
+    color: var(--body-color);
+  }
+  .ccwebspot.simple.buttons .button,
+  .ccwebspot.simple.button,
+  .ccwebspot.simple.primary.buttons .button,
+  .ccwebspot.simple.primary.button,
+  .ccwebspot.simple.secondary.buttons .button,
+  .ccwebspot.simple.secondary.button,
+  .ccwebspot.simple.positive.buttons .button,
+  .ccwebspot.simple.positive.button,
+  .ccwebspot.simple.negative.buttons .button,
+  .ccwebspot.simple.negative.button,
+  .ccwebspot.simple.white.buttons .button,
+  .ccwebspot.simple.white.button,
+  .ccwebspot.simple.light.buttons .button,
+  .ccwebspot.simple.light.button,
+  .ccwebspot.simple.dark.buttons .button,
+  .ccwebspot.simple.dark.button {
+    box-shadow: none;
+    border-color: transparent;
+  }
+  .ccwebspot.basic.button:hover,
+  .ccwebspot.basic.button.active,
+  .ccwebspot.basic.button:active {
+    color: #fff;
+    background: #616161;
+    border-color: #616161;
+  }
+  /* == primary == */
+  .ccwebspot.primary.buttons .button,
+  .ccwebspot.primary.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+  }
+  .ccwebspot.primary.buttons .button:hover,
+  .ccwebspot.primary.buttons .button:active,
+  .ccwebspot.primary.buttons .button:focus,
+  .ccwebspot.primary.button:hover,
+  .ccwebspot.primary.button:active,
+  .ccwebspot.primary.button:focus {
+    color: #fff;
+    background: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+  }
+  .ccwebspot.primary.buttons .button:active,
+  .ccwebspot.primary.buttons .button.active,
+  .ccwebspot.primary.button:active,
+  .ccwebspot.primary.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.primary.buttons .button,
+  .ccwebspot.simple.primary.button {
+    color: var(--primary-color);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.primary.button:hover,
+  .ccwebspot.simple.primary.button.active,
+  .ccwebspot.simple.primary.button:active {
+    color: var(--primary-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.primary.buttons .button,
+  .ccwebspot.basic.primary.button {
+    color: var(--primary-color);
+  }
+  .ccwebspot.basic.primary.button:hover,
+  .ccwebspot.basic.primary.button.active,
+  .ccwebspot.basic.primary.button:active {
+    color: #fff;
+  }
+  .ccwebspot.inverted.primary.buttons .button,
+  .ccwebspot.inverted.primary.button {
+    background-color: var(--primary-color-inverted);
+    color: var(--primary-color);
+    border-color: var(--primary-color-inverted);
+  }
+  .ccwebspot.inverted.primary.buttons .button.active,
+  .ccwebspot.inverted.primary.buttons .button:hover,
+  .ccwebspot.inverted.primary.button:hover,
+  .ccwebspot.inverted.primary.button.active,
+  .ccwebspot.inverted.primary.button:active {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  /* == secondary == */
+  .ccwebspot.secondary.buttons .button,
+  .ccwebspot.secondary.button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-color: var(--secondary-color);
+  }
+  .ccwebspot.secondary.buttons .button:hover,
+  .ccwebspot.secondary.buttons .button:active,
+  .ccwebspot.secondary.buttons .button:focus,
+  .ccwebspot.secondary.button:hover,
+  .ccwebspot.secondary.button:active,
+  .ccwebspot.secondary.button:focus {
+    color: #fff;
+    background: var(--secondary-color-hover);
+    border-color: var(--secondary-color-hover);
+  }
+  .ccwebspot.secondary.buttons .button:active,
+  .ccwebspot.secondary.buttons .button.active,
+  .ccwebspot.secondary.button:active,
+  .ccwebspot.secondary.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.secondary.buttons .button,
+  .ccwebspot.simple.secondary.button {
+    color: var(--secondary-color);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.secondary.button:hover,
+  .ccwebspot.simple.secondary.button.active,
+  .ccwebspot.simple.secondary.button:active {
+    color: var(--secondary-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.secondary.buttons .button,
+  .ccwebspot.basic.secondary.button {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  .ccwebspot.basic.secondary.button:hover,
+  .ccwebspot.basic.secondary.button.active,
+  .ccwebspot.basic.secondary.button:active {
+    color: #fff;
+  }
+  .ccwebspot.inverted.secondary.buttons .button,
+  .ccwebspot.inverted.secondary.button {
+    background-color: var(--secondary-color-inverted);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color-inverted);
+  }
+  .ccwebspot.inverted.secondary.buttons .button.active,
+  .ccwebspot.inverted.secondary.buttons .button:hover,
+  .ccwebspot.inverted.secondary.button:hover,
+  .ccwebspot.inverted.secondary.button.active,
+  .ccwebspot.inverted.secondary.button:active {
+    color: #fff;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  /* == positive == */
+  .ccwebspot.positive.buttons .button,
+  .ccwebspot.positive.button {
+    background-color: var(--positive-color);
+    color: #fff;
+    border-color: var(--positive-color);
+  }
+  .ccwebspot.positive.buttons .button:hover,
+  .ccwebspot.positive.buttons .button:active,
+  .ccwebspot.positive.buttons .button:focus,
+  .ccwebspot.positive.button:hover,
+  .ccwebspot.positive.button:active,
+  .ccwebspot.positive.button:focus {
+    color: #fff;
+    background: var(--positive-color-hover);
+    border-color: var(--positive-color-hover);
+  }
+  .ccwebspot.positive.buttons .button:active,
+  .ccwebspot.positive.buttons .button.active,
+  .ccwebspot.positive.button:active,
+  .ccwebspot.positive.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.positive.buttons .button,
+  .ccwebspot.simple.positive.button {
+    color: var(--positive-color-hover);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.positive.button:hover,
+  .ccwebspot.simple.positive.button.active,
+  .ccwebspot.simple.positive.button:active {
+    color: var(--positive-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.positive.buttons .button,
+  .ccwebspot.basic.positive.button {
+    border-color: var(--positive-color-hover);
+    color: var(--positive-color-hover);
+  }
+  .ccwebspot.basic.positive.button:hover,
+  .ccwebspot.basic.positive.button.active,
+  .ccwebspot.basic.positive.button:active {
+    color: #fff;
+  }
+  .ccwebspot.inverted.positive.buttons .button,
+  .ccwebspot.inverted.positive.button {
+    background-color: var(--positive-color-inverted);
+    color: var(--positive-color);
+    border-color: var(--positive-color-inverted);
+  }
+  .ccwebspot.inverted.positive.buttons .button.active,
+  .ccwebspot.inverted.positive.buttons .button:hover,
+  .ccwebspot.inverted.positive.button:hover,
+  .ccwebspot.inverted.positive.button.active,
+  .ccwebspot.inverted.positive.button:active {
+    color: #fff;
+    background: var(--positive-color);
+    border-color: var(--positive-color);
+  }
+  /* == negative == */
+  .ccwebspot.negative.buttons .button,
+  .ccwebspot.negative.button {
+    background-color: var(--negative-color);
+    color: #fff;
+    border-color: var(--negative-color);
+  }
+  .ccwebspot.negative.buttons .button:hover,
+  .ccwebspot.negative.buttons .button:active,
+  .ccwebspot.negative.buttons .button:focus,
+  .ccwebspot.negative.button:hover,
+  .ccwebspot.negative.button:active,
+  .ccwebspot.negative.button:focus {
+    color: #fff;
+    background: var(--negative-color-hover);
+    border-color: var(--negative-color-hover);
+  }
+  .ccwebspot.negative.buttons .button:active,
+  .ccwebspot.negative.buttons .button.active,
+  .ccwebspot.negative.button:active,
+  .ccwebspot.negative.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.negative.buttons .button,
+  .ccwebspot.simple.negative.button {
+    color: var(--negative-color-hover);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.negative.button:hover,
+  .ccwebspot.simple.negative.button.active,
+  .ccwebspot.simple.negative.button:active {
+    color: var(--negative-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.negative.buttons .button,
+  .ccwebspot.basic.negative.button {
+    border-color: var(--negative-color-hover);
+    color: var(--negative-color-hover);
+  }
+  .ccwebspot.basic.negative.button:hover,
+  .ccwebspot.basic.negative.button.active,
+  .ccwebspot.basic.negative.button:active {
+    color: #fff;
+  }
+  .ccwebspot.inverted.negative.buttons .button,
+  .ccwebspot.inverted.negative.button {
+    background-color: var(--negative-color-inverted);
+    color: var(--negative-color);
+    border-color: var(--negative-color-inverted);
+  }
+  .ccwebspot.inverted.negative.buttons .button.active,
+  .ccwebspot.inverted.negative.buttons .button:hover,
+  .ccwebspot.inverted.negative.button:hover,
+  .ccwebspot.inverted.negative.button.active,
+  .ccwebspot.inverted.negative.button:active {
+    color: #fff;
+    background: var(--negative-color);
+    border-color: var(--negative-color);
+  }
+  /* == light == */
+  .ccwebspot.light.buttons .button,
+  .ccwebspot.light.button {
+    background-color: var(--light-color);
+    color: var(--body-color);
+    border-color: var(--light-color);
+  }
+  .ccwebspot.light.buttons .button:hover,
+  .ccwebspot.light.buttons .button:active,
+  .ccwebspot.light.buttons .button:focus,
+  .ccwebspot.light.buttons .button.active,
+  .ccwebspot.light.button:hover,
+  .ccwebspot.light.button:active,
+  .ccwebspot.light.button:focus {
+    color: var(--body-color);
+    background: var(--light-color-hover);
+    border-color: var(--light-color-hover);
+  }
+  .ccwebspot.light.buttons .button:active,
+  .ccwebspot.light.buttons .button.active,
+  .ccwebspot.light.button:active,
+  .ccwebspot.light.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.light.buttons .button,
+  .ccwebspot.simple.light.button {
+    color: var(--light-color);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.light.button:hover,
+  .ccwebspot.simple.light.button.active,
+  .ccwebspot.simple.light.button:active {
+    color: var(--light-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.light.buttons .button,
+  .ccwebspot.basic.light.button {
+    border-color: var(--light-color);
+    color: var(--body-color);
+  }
+  .ccwebspot.basic.light.button:hover,
+  .ccwebspot.basic.light.button.active,
+  .ccwebspot.basic.light.button:active {
+    color: var(--body-color);
+  }
+  .ccwebspot.inverted.light.buttons .button,
+  .ccwebspot.inverted.light.button {
+    background-color: var(--light-color-inverted);
+    color: var(--light-color);
+    border-color: var(--light-color-inverted);
+  }
+  .ccwebspot.inverted.light.buttons .button.active,
+  .ccwebspot.inverted.light.buttons .button:hover,
+  .ccwebspot.inverted.light.button:hover,
+  .ccwebspot.inverted.light.button.active,
+  .ccwebspot.inverted.light.button:active {
+    color: #fff;
+    background: var(--light-color);
+    border-color: var(--light-color);
+  }
+  /* == dark == */
+  .ccwebspot.dark.buttons .button,
+  .ccwebspot.dark.button {
+    background-color: var(--dark-color);
+    color: #fff;
+    border-color: var(--dark-color);
+  }
+  .ccwebspot.dark.buttons .button:hover,
+  .ccwebspot.dark.buttons .button:active,
+  .ccwebspot.dark.buttons .button:focus,
+  .ccwebspot.dark.button:hover,
+  .ccwebspot.dark.button:active,
+  .ccwebspot.dark.button:focus {
+    color: #fff;
+    background: var(--dark-color-hover);
+    border-color: var(--dark-color-hover);
+  }
+  .ccwebspot.dark.buttons .button:active,
+  .ccwebspot.dark.buttons .button.active,
+  .ccwebspot.dark.button:active,
+  .ccwebspot.dark.button.active {
+    box-shadow: none;
+  }
+  .ccwebspot.simple.dark.buttons .button,
+  .ccwebspot.simple.dark.button {
+    color: var(--dark-color);
+    border-color: transparent;
+  }
+  .ccwebspot.simple.dark.button:hover,
+  .ccwebspot.simple.dark.button.active,
+  .ccwebspot.simple.dark.button:active {
+    color: var(--dark-color-hover);
+    background: transparent;
+  }
+  .ccwebspot.basic.dark.buttons .button,
+  .ccwebspot.basic.dark.button {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+  }
+  .ccwebspot.basic.dark.button:hover,
+  .ccwebspot.basic.dark.button.active,
+  .ccwebspot.basic.dark.button:active {
+    color: #fff;
+  }
+  .ccwebspot.inverted.dark.buttons .button,
+  .ccwebspot.inverted.dark.button {
+    background-color: var(--dark-color-inverted);
+    color: var(--dark-color);
+    border-color: var(--dark-color-inverted);
+  }
+  .ccwebspot.inverted.dark.buttons .button.active,
+  .ccwebspot.inverted.dark.buttons .button:hover,
+  .ccwebspot.inverted.dark.button:hover,
+  .ccwebspot.inverted.dark.button.active,
+  .ccwebspot.inverted.dark.button:active {
+    color: #fff;
+    background: var(--dark-color);
+    border-color: var(--dark-color);
+  }
+  /* == white == */
+  .ccwebspot.white.buttons .button,
+  .ccwebspot.white.button {
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(50,50,93,.11), 0 1px 1px rgba(0,0,0,.08);
+    color: var(--primary-color);
+    border-color: #fff;
+  }
+  .ccwebspot.white.buttons .button:hover,
+  .ccwebspot.white.buttons .button:active,
+  .ccwebspot.white.buttons .button:focus,
+  .ccwebspot.white.button:hover,
+  .ccwebspot.white.button:active,
+  .ccwebspot.white.button:focus {
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+  .ccwebspot.white.buttons .button:active,
+  .ccwebspot.white.buttons .button.active,
+  .ccwebspot.white.button:active,
+  .ccwebspot.white.button.active {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  .ccwebspot.basic.white.buttons .button,
+  .ccwebspot.basic.white.button {
+    border-color: #fff;
+    color: #fff;
+  }
+  .ccwebspot.basic.white.button:hover,
+  .ccwebspot.basic.white.button.active,
+  .ccwebspot.basic.white.button:active {
+    color: var(--primary-color);
+  }
+  /* == transparent == */
+  .ccwebspot.transparent.buttons .button,
+  .ccwebspot.transparent.button {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border-color: transparent
+  }
+  .ccwebspot.transparent.buttons .button:hover,
+  .ccwebspot.transparent.buttons .button:active,
+  .ccwebspot.transparent.buttons .button:focus,
+  .ccwebspot.transparent.button:active,
+  .ccwebspot.transparent.button:focus {
+    background: rgba(255,255,255,0.4);
+  }
+  /* == fluid == */
+  .ccwebspot.fluid.button,
+  .ccwebspot.fluid.buttons {
+    display: flex;
+    margin: 0
+  }
+  .ccwebspot.fluid.buttons .button {
+    flex: 1 1 0px;
+    min-width: 0;
+  }
+  .ccwebspot.fluid.labeled.button span {
+    flex: 1 1 0px;
+  }
+  button.ccwebspot.fluid.button {
+    /*padding + border*/
+    width: calc(100% - 3.75rem - 2px);
+  }
+  /* == icon == */
+  .ccwebspot.icon.button {
+    margin: 0;
+    line-height: 1rem;
+    padding: .875rem;
+    font-size: 1rem;
+  }
+  .ccwebspot.icon.button .icon {
+    width: 1rem;
+  }
+  .ccwebspot.button:not(.icon) .icon {
+    margin-right: 1rem;
+  }
+  .ccwebspot.right.button:not(.labeled):not(.icon) .icon {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+  /* == labeled == */
+  .ccwebspot.labeled.button {
+    padding: 0;
+  }
+  .ccwebspot.labeled.button span,
+  .ccwebspot.labeled.button .icon {
+    flex: 0 1 auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+  }
+  .ccwebspot.labeled.button span {
+    padding: .875rem 1.875rem;
+  }
+  .ccwebspot.labeled.button .icon {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: .875rem;
+    background-color: rgba(50,50,93,.1);
+    box-shadow: 1px 0 0 0 rgba(50,50,93,.2);
+  }
+  .ccwebspot.right.labeled.button .icon {
+    box-shadow: -1px 0 0 0 rgba(50,50,93,.2);
+  }
+  /* == Groups == */
+  .ccwebspot.buttons {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .ccwebspot.buttons .button {
+    flex: 1 0 auto;
+    margin: 0em;
+    border-radius: 0em;
+    box-shadow: none;
+  }
+  .ccwebspot.buttons .button:first-child {
+    border-radius: .250rem 0 0 .250rem;
+  }
+  .ccwebspot.buttons .button:last-child {
+    border-radius: 0 .250rem .250rem 0;
+  }
+  .ccwebspot.rounded.buttons .button:first-child {
+    border-radius: 2rem 0 0 2rem;
+  }
+  .ccwebspot.rounded.buttons .button:last-child {
+    border-radius: 0 2rem 2rem 0;
+  }
+  /* == status == */
+  .ccwebspot.button .status {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: .813rem;
+    height: .813rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  .ccwebspot.button .status.negative {
+    background: var(--negative-color);
+  }
+  .ccwebspot.button .status.positive {
+    background: var(--positive-color);
+  }
+  /* == circular == */
+  .ccwebspot.circular.button {
+    border-radius: 100rem;
+  }
+  /* == compact == */
+  .ccwebspot.compact.buttons,
+  .ccwebspot.compact.button {
+    padding: .750rem 1rem;
+  }
+  /* == rounded == */
+  .ccwebspot.rounded.buttons,
+  .ccwebspot.rounded.button {
+    border-radius: 2.5rem;
+  }
+  /* == spaced == */
+  .ccwebspot.spaced.button {
+    margin-right: 1rem;
+  }
+  /* == passive == */
+  .ccwebspot.passive.button {
+    cursor: default;
+    pointer-events: none;
+  }
+  /* == attached == */
+  .ccwebspot.attached.buttons,
+  .ccwebspot.attached.button {
+    position: absolute;
+    z-index: 2
+  }
+  .ccwebspot.attached.top.buttons,
+  .ccwebspot.attached.top.button {
+    top: 0
+  }
+  .ccwebspot.attached.bottom.buttons,
+  .ccwebspot.attached.bottom.button {
+    bottom: 0
+  }
+  .ccwebspot.attached.left.buttons,
+  .ccwebspot.attached.left.button {
+    left: 0
+  }
+  .ccwebspot.attached.right.buttons,
+  .ccwebspot.attached.right.button {
+    right: 0
+  }
+  .ccwebspot.attached.middle.buttons,
+  .ccwebspot.attached.middle.button {
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .ccwebspot.attached.spaced.top.buttons,
+  .ccwebspot.attached.spaced.top.button {
+    top: 1rem;
+  }
+  .ccwebspot.attached.spaced.right.buttons,
+  .ccwebspot.attached.spaced.right.button {
+    right: 1rem
+  }
+  .ccwebspot.attached.spaced.left.buttons,
+  .ccwebspot.attached.spaced.left.button {
+    left: 1rem
+  }
+  .ccwebspot.attached.outside.top.buttons,
+  .ccwebspot.attached.outside.top.button {
+    top: -1rem;
+  }
+  .ccwebspot.attached.outside.right.buttons,
+  .ccwebspot.attached.outside.right.button {
+    right: -1rem
+  }
+  .ccwebspot.attached.outside.left.buttons,
+  .ccwebspot.attached.outside.left.button {
+    left: -1rem
+  }
+  /* == disabled == */
+  .ccwebspot.buttons .disabled.button,
+  .ccwebspot.disabled.button,
+  .ccwebspot.button:disabled,
+  .ccwebspot.disabled.button:hover,
+  .ccwebspot.disabled.active.button {
+    cursor: default;
+    opacity: 0.45;
+    box-shadow: none;
+    pointer-events: none;
+  }
+  /* == loading == */
+  .ccwebspot.loading.loading.button {
+    z-index: 1;
+    cursor: default;
+    color: transparent;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0s linear, opacity 0.1s ease;
+  }
+  .ccwebspot.loading.button::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: calc(-1.5rem / 2);
+    margin-left: calc(-1.5rem / 2);
+    border-radius: 50%;
+    border: 4px solid rgba(0,0,0,.1);
+    border-top-color: #fff;
+    -webkit-animation: spinner .6s linear infinite;
+    animation: spinner .6s linear infinite;
+  }
+  .ccwebspot.small.loading.button::after {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    border: 2px solid rgba(0,0,0,.1);
+    border-top-color: #fff;
+  }
+  @-webkit-keyframes spinner {
+   to {
+  -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+  }
+  @keyframes spinner {
+   to {
+  -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+  }
+  /* == Sizes == */
+  .ccwebspot.relaxed.button {
+    padding: .875rem 2.5rem;
+  }
+  .ccwebspot.very.relaxed.button {
+    padding: .875rem 4rem;
+  }
+  .ccwebspot.mini.buttons .button,
+  .ccwebspot.mini.button {
+    font-size: .750rem;
+    padding: .50rem 1rem;
+    line-height: .750rem;
+  }
+  .ccwebspot.mini.button .icon {
+    font-size: 1rem;
+  }
+  button.ccwebspot.mini.fluid.button {
+    width: calc(100% - 2rem - 2px);
+  }
+  .ccwebspot.mini.circular.button,
+  .ccwebspot.mini.icon.button {
+    padding: .375rem;
+  }
+  .ccwebspot.small.buttons .button,
+  .ccwebspot.small.button {
+    font-size: .875rem;
+    padding: .625rem 1.250rem;
+  }
+  button.ccwebspot.small.fluid.button {
+    width: calc(100% - 2.5rem - 2px);
+  }
+  .ccwebspot.small.circular.button,
+  .ccwebspot.small.icon.button {
+    padding: .625rem;
+  }
+  .ccwebspot.buttons .button,
+  .ccwebspot.button {
+    font-size: 1rem;
+  }
+  .ccwebspot.big.buttons .button,
+  .ccwebspot.big.button {
+    font-size: 1.25rem;
+    padding: 1em 2em;
+  }
+  .ccwebspot.big.circular.button {
+    padding: 1.25rem;
+  }
+  .ccwebspot.huge.buttons .button,
+  .ccwebspot.huge.button {
+    font-size: 1.5rem;
+    padding: 1.25em 2.50em;
+  }
+  .ccwebspot.huge.circular.button {
+    padding: 1.5rem;
+  }
+  .ccwebspot.massive.buttons .button,
+  .ccwebspot.massive.button {
+    font-size: 1.5rem;
+    padding: 1.5em 3em;
+  }
+  .ccwebspot.massive.circular.button {
+    padding: 2.5rem;
+  }
+  .ccwebspot.compact.button {
+    padding: .5rem 1rem;
+  }
+  
+  /* Phone */
+  @media screen and (max-width:30em) {
+  .ccwebspot.stacked.button {
+    display: flex;
+    flex: 1 1 0px;
+    min-width: 0;
+    margin-bottom:.250rem;
+  }
+  .ccwebspot.buttons.stacked {
+    display: flex;
+    flex-direction: column;
+  }
+  .ccwebspot.buttons.stacked .button {
+    flex: 1 1 0px;
+    min-width: 0;
+    border-radius:.250rem;
+    justify-content: flex-start;
+    margin-bottom:.250rem;
+  }
+  
+  .ccwebspot.buttons.stacked .button:first-child,
+  .ccwebspot.buttons.stacked .button:last-child {
+    border-radius:.250rem;
+  }
+  }

@@ -1,0 +1,186 @@
+/* == Images == */
+.ccwebspot.image {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    background-color: transparent;
+  }
+  img.ccwebspot.image {
+    display: block;
+  }
+  .ccwebspot.image svg,
+  .ccwebspot.image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .ccwebspot.inline.image,
+  .ccwebspot.inline.image svg,
+  .ccwebspot.inline.image img {
+    display: inline-block;
+  }
+  /* == Variations == */
+  .ccwebspot.rounded.images .image,
+  .ccwebspot.rounded.images img,
+  .ccwebspot.rounded.image img,
+  .ccwebspot.rounded.image svg,
+  .ccwebspot.rounded.image {
+    border-radius: 0.250rem;
+  }
+  .ccwebspot.rounded.left.images .image,
+  .ccwebspot.rounded.left.images img,
+  .ccwebspot.rounded.left.image img,
+  .ccwebspot.rounded.left.image svg,
+  .ccwebspot.rounded.left.image {
+    border-radius: 0.250rem 0 0 0.250rem;
+  }
+  .ccwebspot.rounded.right.images .image,
+  .ccwebspot.rounded.right.images img,
+  .ccwebspot.rounded.right.image img,
+  .ccwebspot.rounded.right.image svg,
+  .ccwebspot.rounded.right.image {
+    border-radius: 0 0.250rem 0.250rem 0;
+  }
+  .ccwebspot.circular.images .image,
+  .ccwebspot.circular.images img,
+  .ccwebspot.circular.image img,
+  .ccwebspot.circular.image svg,
+  .ccwebspot.circular.image {
+    border-radius: 500rem;
+    overflow: hidden;
+  }
+  .ccwebspot.shadow.images .image,
+  .ccwebspot.shadow.images img,
+  .ccwebspot.shadow.image img,
+  .ccwebspot.shadow.image svg,
+  .ccwebspot.shadow.image {
+    box-shadow: 0px 2px 3px var(--dark-color-shadow);
+  }
+  .ccwebspot.boxed.images .image,
+  .ccwebspot.boxed.images img,
+  .ccwebspot.boxed.image img,
+  .ccwebspot.boxed.image svg,
+  .ccwebspot.boxed.image {
+    border: 1px solid var(--light-color);
+  }
+  .ccwebspot.framed.images .image,
+  .ccwebspot.framed.images img,
+  .ccwebspot.framed.image img,
+  .ccwebspot.framed.image svg,
+  .ccwebspot.framed.image {
+    border: 1px solid var(--light-color);
+    padding: 1rem;
+  }
+  .ccwebspot.avatar.images .image,
+  .ccwebspot.avatar.images img,
+  .ccwebspot.avatar.images svg,
+  .ccwebspot.avatar.image img,
+  .ccwebspot.avatar.image svg,
+  .ccwebspot.avatar.image {
+    width: 3em;
+    height: 3em;
+    border-radius: 500rem;
+  }
+  .ccwebspot.category.images .image,
+  .ccwebspot.category.images img,
+  .ccwebspot.category.image img,
+  .ccwebspot.category.image {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    line-height: 2rem;
+    box-sizing: content-box;
+    font-size: .875rem;
+    border-radius: 500rem;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.1);
+    border: 1px solid #fff;
+  }
+  /* == Position == */
+  .ccwebspot.center.image {
+    margin: 0 auto;
+    display: block;
+  }
+  /* == Size == */
+  .ccwebspot.tiny.images .image,
+  .ccwebspot.tiny.images img,
+  .ccwebspot.tiny.images svg,
+  .ccwebspot.tiny.image {
+    width: 24px;
+  }
+  .ccwebspot.mini.images .image,
+  .ccwebspot.mini.images img,
+  .ccwebspot.mini.images svg,
+  .ccwebspot.mini.image {
+    width: 32px;
+  }
+  .ccwebspot.default.images .image,
+  .ccwebspot.default.images img,
+  .ccwebspot.default.images svg,
+  .ccwebspot.default.image {
+    width: 48px;
+  }
+  .ccwebspot.small.images .image,
+  .ccwebspot.small.images img,
+  .ccwebspot.small.images svg,
+  .ccwebspot.small.image {
+    width: 64px;
+  }
+  .ccwebspot.notification.images img,
+  .ccwebspot.notification.images svg,
+  .ccwebspot.notification.image {
+    width: 96px;
+  }
+  .ccwebspot.badge.images .image,
+  .ccwebspot.badge.images img,
+  .ccwebspot.badge.images svg,
+  .ccwebspot.badge.image {
+    width: 112px;
+  }
+  .ccwebspot.normal.images .image,
+  .ccwebspot.normal.images img,
+  .ccwebspot.normal.images svg,
+  .ccwebspot.normal.image {
+    width: 128px;
+  }
+  .ccwebspot.medium.images .image,
+  .ccwebspot.medium.images img,
+  .ccwebspot.medium.images svg,
+  .ccwebspot.medium.image {
+    width: 160px;
+  }
+  .ccwebspot.large.images .image,
+  .ccwebspot.large.images img,
+  .ccwebspot.large.images svg,
+  .ccwebspot.large.image {
+    width: 256px;
+  }
+  .ccwebspot.big.images .image,
+  .ccwebspot.big.images img,
+  .ccwebspot.big.images svg,
+  .ccwebspot.big.image {
+    width: 448px;
+  }
+  .ccwebspot.huge.images .image,
+  .ccwebspot.huge.images img,
+  .ccwebspot.huge.images svg,
+  .ccwebspot.huge.image {
+    width: 512px;
+  }
+  .ccwebspot.massive.images .image,
+  .ccwebspot.massive.images img,
+  .ccwebspot.massive.images svg,
+  .ccwebspot.massive.image {
+    width: 640px;
+  }
+  .ccwebspot.fluid.image,
+  .ccwebspot.fluid.image img,
+  .ccwebspot.fluid.image svg,
+  .ccwebspot.fluid.images,
+  .ccwebspotfluid.images img,
+  .ccwebspot.fluid.images svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  

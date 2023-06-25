@@ -1,0 +1,260 @@
+/* == Label == */
+.ccwebspot.label {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    vertical-align: middle;
+    background-color: #757575;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 0;
+    padding: .5rem 1rem;
+    line-height: 1rem;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: .250rem;
+    box-sizing: content-box;
+    border: 1px solid #757575;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.1);
+  }
+  .ccwebspot.basic.label,
+  .ccwebspot.inverted.label {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: #757575;
+    color: #757575;
+  }
+  /* == Colors == */
+  .ccwebspot.primary.label {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+  }
+  .ccwebspot.primary.basic.label {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+  .ccwebspot.primary.inverted.label {
+    background-color: var(--primary-color-inverted);
+    border-color: var(--primary-color-inverted);
+    color: var(--primary-color);
+  }
+  .ccwebspot.secondary.label {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+  }
+  .ccwebspot.secondary.basic.label {
+    background-color: transparent;
+    color: var(--secondary-color);
+  }
+  .ccwebspot.secondary.inverted.label {
+    background-color: var(--secondary-color-inverted);
+    border-color: var(--secondary-color-inverted);
+    color: var(--secondary-color);
+  }
+  .ccwebspot.positive.label {
+    border-color: var(--positive-color);
+    background-color: var(--positive-color);
+    color: #fff;
+  }
+  .ccwebspot.positive.basic.label {
+    background-color: transparent;
+    color: var(--positive-color);
+  }
+  .ccwebspot.positive.inverted.label {
+    background-color: var(--positive-color-inverted);
+    border-color: var(--positive-color-inverted);
+    color: var(--positive-color);
+  }
+  .ccwebspot.negative.label {
+    background-color: var(--negative-color);
+    border-color: var(--negative-color);
+    color: #fff;
+  }
+  .ccwebspot.negative.basic.label {
+    background-color: transparent;
+    color: var(--negative-color);
+  }
+  .ccwebspot.negative.inverted.label {
+    background-color: var(--negative-color-inverted);
+    border-color: var(--negative-color-inverted);
+    color: var(--negative-color);
+  }
+  .ccwebspot.light.label {
+    background-color: var(--light-color);
+    border-color: var(--light-color);
+    color: var(--body-color);
+  }
+  .ccwebspot.light.basic.label {
+    background-color: transparent;
+    color: var(--light-color);
+  }
+  .ccwebspot.light.inverted.label {
+    background-color: var(--light-color-inverted);
+    border-color: var(--light-color-inverted);
+    color: var(--light-color);
+  }
+  .ccwebspot.dark.label {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    color: #fff;
+  }
+  .ccwebspot.dark.basic.label {
+    background-color: transparent;
+    color: #fff;
+  }
+  .ccwebspot.dark.inverted.label {
+    background-color: var(--dark-color-inverted);
+    border-color: var(--dark-color-inverted);
+    color: var(--dark-color);
+  }
+  .ccwebspot.alert.label {
+    background-color: var(--alert-color);
+    border-color: var(--alert-color);
+    color: #fff;
+  }
+  .ccwebspot.alert.basic.label {
+    background-color: transparent;
+    color: var(--alert-color);
+  }
+  .ccwebspot.white.label {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--primary-color);
+  }
+  .ccwebspot.white.basic.label {
+    background-color: transparent;
+    color: #fff;
+  }
+  .ccwebspot.transparent.label {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid transparent;
+  }
+  /* == icon == */
+  .ccwebspot.label .icon {
+    margin-right: 0.5rem;
+  }
+  .ccwebspot.right.label .icon {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  /* == rounded == */
+  .ccwebspot.rounded.label {
+    border-radius: 2rem;
+  }
+  /* == circular == */
+  .ccwebspot.circular.label {
+    border-radius: 100rem;
+  }
+  /* == initials == */
+  .ccwebspot.initials.label {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    line-height: 2rem;
+    font-size: .875rem;
+  }
+  .ccwebspot.initials.label .icon {
+      margin-right:0;
+  }
+  /* == empty == */
+  .ccwebspot.empty.label {
+    min-width: 0em;
+    min-height: 0em;
+    overflow: hidden;
+    width: .875rem;
+    height: .875rem;
+    padding: 0;
+  }
+  /* == ring == */
+  .ccwebspot.ring.label {
+    border-radius: 100%;
+    height: .875rem;
+    padding: 0;
+    vertical-align: middle;
+    width: .875rem;
+    border:0;
+  }
+  .ccwebspot.ring.label.spaced {
+    margin-right:.5rem
+  }
+  .ccwebspot.ring.label::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 0.625rem;
+    left: 0.125rem;
+    position: absolute;
+    top: 0.125rem;
+    transition: all 0.3s ease 0s;
+    width: 0.625rem;
+  }
+  /* == link == */
+  .ccwebspot.link.label {
+    cursor: pointer;
+  }
+  .ccwebspot.simple.label {
+    background-color: transparent;
+    border:0;
+    box-shadow:none;
+    color:inherit;
+  }
+  /* == status == */
+  .ccwebspot.label .status {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: .813rem;
+    height: .813rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  .ccwebspot.label .status.negative {
+    background: var(--negative-color);
+  }
+  .ccwebspot.label .status.positive {
+    background: var(--positive-color);
+  }
+  /* == Sizes == */
+  .ccwebspot.tiny.label {
+    font-size: 0.6875rem;
+    padding: .250rem .5rem;
+  }
+  .ccwebspot.tiny.empty.label {
+    width: .5rem;
+    height: .5rem;
+    padding: 0;
+  }
+  .ccwebspot.small.label {
+    font-size: 0.750rem;
+    padding: .25rem .5rem;
+  }
+  .ccwebspot.small.empty.label {
+    width: .750rem;
+    height: .750rem;
+    padding: 0;
+  }
+  .ccwebspot.label {
+    font-size: 0.813rem;
+  }
+  .ccwebspot.big.label {
+    font-size: 0.913rem;
+  }
+  .ccwebspot.big.initials.label {
+    width: calc(2.875rem - 2px);
+    height: calc(2.875rem - 2px);
+    line-height: calc(2.875rem - 2px);
+  }
+  .ccwebspot.large.label {
+    font-size: 1rem;
+  }

@@ -1,0 +1,809 @@
+/* == Font Size == */
+.ccwebspot.tiny.text {
+    font-size: 0.688rem;
+  }
+  .ccwebspot.mini.text {
+    font-size: 0.750rem;
+  }
+  .ccwebspot.small.text {
+    font-size: 0.875rem;
+  }
+  .ccwebspot.normal.text {
+    font-size: 1rem;
+  }
+  .ccwebspot.medium.text {
+    font-size: 1.25rem;
+  }
+  .ccwebspot.large.text {
+    font-size: 1.625rem;
+  }
+  .ccwebspot.big.text {
+    font-size: 2.250rem;
+  }
+  .ccwebspot.huge.text {
+    font-size: 2.75rem;
+  }
+  .ccwebspot.massive.text {
+    font-size: 3.250rem;
+  }
+  .ccwebspot.thin.text {
+    font-weight: 300;
+  }
+  .ccwebspot.light.text {
+    font-weight: 400;
+  }
+  .ccwebspot.semi.text {
+    font-weight: 500;
+  }
+  .ccwebspot.demi.text {
+    font-weight: 700;
+  }
+  .ccwebspot.bold.text {
+    font-weight: 800;
+  }
+  .ccwebspot.italic.text {
+    font-style: italic;
+  }
+  .ccwebspot.link.text {
+    cursor:pointer;
+  }
+  .ccwebspot.primary.text {
+    color: var(--primary-color);
+  }
+  .ccwebspot.secondary.text {
+    color: var(--secondary-color);
+  }
+  .ccwebspot.positive.text {
+    color: var(--positive-color);
+  }
+  .ccwebspot.negative.text {
+    color: var(--negative-color);
+  }
+  .ccwebspot.light.text {
+    color: var(--light-color);
+  }
+  .ccwebspot.white.text {
+    color: #fff;
+  }
+  .ccwebspot.dark.text {
+    color: var(--dark-color);
+  }
+  .ccwebspot.grey.text {
+    color: var(--grey-color);
+  }
+  .ccwebspot.strike.text {
+    text-decoration: line-through;
+  }
+  .ccwebspot.caps {
+    text-transform: uppercase;
+  }
+  .ccwebspot.short.text {
+    line-height: 1;
+  }
+  .ccwebspot.tall.text {
+    line-height: 2;
+  }
+  .ccwebspot.dimmed.text {
+    opacity: .75;
+  }
+  .ccwebspot.very.dimmed.text {
+    opacity: .5;
+  }
+  .ccwebspot.icon.text {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .ccwebspot.icon.text > .icon,
+  .ccwebspot.icon.text > .image,
+  .ccwebspot.icon.text > .label {
+    flex: 0 0 auto;
+    max-width: 100%;
+    margin-right: .5em;
+  }
+  .ccwebspot.icon.text.middle {
+    display: flex;
+    justify-content: center;
+  }
+  .ccwebspot.icon.right.text > .icon,
+  .ccwebspot.icon.right.text > .image,
+  .ccwebspot.icon.right.text > .label {
+    margin-left: .5em;
+    margin-right: auto;
+  }
+  .ccwebspot.primary.bg {
+    background-color: var(--primary-color);
+  }
+  .ccwebspot.primary.inverted.bg {
+    background-color: var(--primary-color-inverted);
+  }
+  .ccwebspot.secondary.bg {
+    background-color: var(--secondary-color);
+  }
+  .ccwebspot.secondary.inverted.bg {
+    background-color: var(--secondary-color-inverted);
+  }
+  .ccwebspot.positive.bg {
+    background-color: var(--positive-color);
+  }
+  .ccwebspot.positive.inverted.bg {
+    background-color: var(--positive-color-inverted);
+  }
+  .ccwebspot.negative.bg {
+    background-color: var(--negative-color);
+  }
+  .ccwebspot.negative.inverted.bg {
+    background-color: var(--negative-color-inverted);
+  }
+  .ccwebspot.light.bg {
+    background-color: var(--light-color);
+  }
+  .ccwebspot.dark.bg {
+    background-color: var(--dark-color);
+  }
+  .ccwebspot.grey.bg {
+    background-color: var(--grey-color);
+  }
+  .ccwebspot.grey100.bg {
+    background-color: var(--grey-color-100);
+  }
+  .ccwebspot.grey300.bg {
+    background-color: var(--grey-color-300);
+  }
+  .ccwebspot.grey500.bg {
+    background-color: var(--grey-color-500);
+  }
+  .ccwebspot.boxed {
+    border: 1px solid var(--grey-color-300);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .ccwebspot.shadow {
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+  .ccwebspot.soft.shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  .ccwebspot.readonly {
+    position: relative;
+    cursor: not-allowed;
+    point-events: none;
+    text-shadow: none !important;
+    color: transparent !important;
+    -webkit-transition: all 0s linear;
+    transition: all 0s linear;
+  }
+  .ccwebspot.readonly:before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100%;
+    border-radius: 0.250em;
+    z-index: 10;
+  }
+  .truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .highlite {
+    background-color: #fffde7;
+  }
+  .dimmable {
+    position: relative;
+    z-index: 0;
+  }
+  .dimmable.active::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--dark-color-shadow);
+  }
+  .h300 {
+    height:300px;
+  }
+  .h360 {
+    height:360px;
+  }
+  .h400 {
+    height:400px;
+  }
+  .mw400 {
+    max-width:400px;
+  }
+  /* == Tabs == */
+  .ccwebspot.tabs .nav,
+  .ccwebspot.navs .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .ccwebspot.tabs .nav li,
+  .ccwebspot.navs .nav li {
+    margin-right: 1rem;
+  }
+  .ccwebspot.tabs .nav li:last-child,
+  .ccwebspot.navs .nav li:last-child  {
+    margin-right: 0;
+  }
+  .ccwebspot.tabs .nav li a,
+  .ccwebspot.navs .nav li a {
+    border: 1px solid var(--grey-color-300);
+    padding: .5rem 1.75rem;
+    border-radius: 0.250rem;
+    display: flex;
+    background: #fff;
+    flex-flow: row wrap;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .ccwebspot.tabs .nav li a .icon,
+  .ccwebspot.tabs .nav li a img,
+  .ccwebspot.navs .nav li a .icon,
+  .ccwebspot.navs .nav li a img  {
+    flex: 0 0 auto;
+    max-width: 100%;
+    align-self: center;
+    margin-right: .5rem;
+  }
+  .ccwebspot.tabs .nav li a.right .icon,
+  .ccwebspot.tabs .nav li a.right img,
+  .ccwebspot.navs .nav li a.right .icon,
+  .ccwebspot.navs .nav li a.right img {
+    margin-left: .5rem;
+  }
+  .ccwebspot.tabs .nav li.active a,
+  .ccwebspot.tabs .nav li a:hover,
+  .ccwebspot.navs .nav li.active a,
+  .ccwebspot.navs .nav li a:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-color-inverted);
+  }
+  .ccwebspot.tabs .tab {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.250rem;
+    padding: 2rem 1rem;
+    background: #fff;
+    border: 1px solid var(--grey-color-300);
+  }
+  .ccwebspot.fluid.tabs .nav l,
+  .ccwebspot.fluid.navs .nav lii {
+    flex: 1 1 0px;
+    min-width: 0;
+  }
+  .ccwebspot.navs.secondary {
+    background-color: var(--secondary-color);
+    border-radius:.250rem;
+    padding:1rem;
+  }
+  .ccwebspot.navs.secondary .nav li a {
+    background: transparent;
+    color: #fff;
+    border:0;
+  }
+  .ccwebspot.navs.secondary .nav li.active a,
+  .ccwebspot.navs.secondary .nav li a:hover {
+    background-color: rgba(255,255,255,.2);
+  }
+  /* Mobile */
+  @media screen and (max-width:48.063em) {
+  .ccwebspot.tabs .nav,
+  .ccwebspot.navs .nav {
+    flex-direction: column;
+  }
+  .ccwebspot.tabs .nav li,
+  .ccwebspot.navs .nav li {
+    margin-right: 0
+  }
+  }
+  /* == Accordion == */
+  .ccwebspot.accordion section {
+    border-radius: .250rem;
+    position: relative;
+    border: 1px solid var(--grey-color-300);
+    margin-bottom: .75rem;
+  }
+  .ccwebspot.accordion section h6.summary {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0
+  }
+  .ccwebspot.accordion section h6.summary a {
+    padding: 2rem 4.5rem 2rem 2rem;
+    display: block;
+    font-weight: 400;
+    position: relative;
+    border-radius: .250rem .250rem 0 0;
+  }
+  .ccwebspot.accordion section h6.summary a::before {
+    font-family: "ccwebspotIcons";
+    position: absolute;
+    content: "\e9e6";
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%)
+  }
+  .ccwebspot.accordion section.active h6.summary a {
+    background-color: var(--primary-color);
+    color: var(--primary-color-inverted);
+  }
+  .ccwebspot.accordion section.active h6.summary a::before {
+    content: "\ea0c";
+  }
+  .ccwebspot.accordion section .details {
+    padding: 2rem;
+  }
+  /* == Breadcrumb == */
+  .ccwebspot.breadcrumb {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-weight: 300;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+  }
+  .ccwebspot.breadcrumb .divider {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
+    min-width: 0;
+    margin: 0 .750rem;
+    color: var(--grey-color-500);
+  }
+  .ccwebspot.breadcrumb a.section {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .ccwebspot.breadcrumb .active.section {
+    font-weight: 400;
+    color: var(--dark-color);
+  }
+  .ccwebspot.small.breadcrumb {
+    font-size: 0.875rem;
+  }
+  /* == Pagination == */
+  .ccwebspot.pagination {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .ccwebspot.pagination .item {
+    flex: 1 1 0px;
+    min-width: 0;
+    line-height: 1rem;
+    padding: .750rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    border-radius: .250rem;
+    text-align:center;
+  }
+  .ccwebspot.pagination .item.active {
+    background-color: var(--primary-color);
+    color: var(--primary-color-inverted);
+  }
+  .ccwebspot.pagination .item:hover {
+    color: var(--primary-color);
+  }
+  .ccwebspot.pagination .item.disabled {
+    color: var(--grey-color-500);
+    cursor: not-allowed;
+  }
+  .ccwebspot.small.pagination .item {
+    padding: .750rem;
+    font-size: .875rem;
+  }
+  /* == Dividers == */
+  .ccwebspot.divider {
+    border-top: 1px solid var(--dark-color-shadow);
+    height: 0;
+    margin: 0.5rem 0;
+  }
+  .ccwebspot.vertical.divider {
+    border:0;
+    background-color: var(--dark-color-shadow);
+    height: .750rem;
+    margin: 0 0.5rem;
+    width:1px;
+    display:inline-block
+  }
+  .ccwebspot.basic.divider {
+    border-top: 1px solid var(--dark-color-shadow);
+    height: 0;
+    margin: 0;
+  }
+  .ccwebspot.space.divider {
+    border:0;
+    margin: 0;
+    height:1rem;
+  }
+  .ccwebspot.auto.divider {
+    border-color: var(--grey-color-300);
+    margin: 1rem -2rem;
+  }
+  .ccwebspot.wide.divider {
+    border-top: 3px solid var(--grey-color-300);
+  }
+  .ccwebspot.very.wide.divider {
+    border-top: 5px solid var(--grey-color-300);
+  }
+  /* == Uploader == */
+  .ccwebspot.basic.uploader {
+    border: 0;
+    width: 100%;
+    color: #92AAB0;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    text-align: left;
+  }
+  .ccwebspot.uploader-active {
+    border-color: #0B85A1;
+  }
+  .ccwebspot.uploader div.or {
+    font-size: 14px;
+    font-weight: bold;
+    color: #C0C0C0;
+    padding: 10px;
+  }
+  .ccwebspot.basic.uploader div.content label {
+    background-color: transparent;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: auto;
+    margin: 0;
+    box-shadow: none;
+  }
+  .ccwebspot.uploader div.content span {
+    cursor: pointer;
+  }
+  .ccwebspot.uploader div.content input,
+  .ccwebspot.button.uploader input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    width:100%;
+    height:100%;
+    direction: ltr;
+    cursor: pointer;
+  }
+  .ccwebspot.uploader div.content label:hover {
+    background-color: #427fed;
+  }
+  .ccwebspot.basic.uploader div.content label:hover {
+    background-color: transparent;
+  }
+  .ccwebspot.button.uploader {
+    width: auto;
+    margin: 0;
+  }
+  /* == Activity == */
+  ul.ccwebspot.activity,
+  ul.ccwebspot.activity li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.ccwebspot.activity li {
+    clear: both;
+  }
+  ul.ccwebspot.activity li .intro {
+    float: left;
+    width: 150px;
+    text-align: right;
+    position: relative;
+    font-size: .938em;
+    font-weight: 700;
+    padding: 1rem;
+  }
+  ul.ccwebspot.activity li .intro:after,
+  ul.ccwebspot.activity li .intro:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    right: -6px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    top: 1.5em;
+    z-index: 3
+  }
+  ul.ccwebspot.activity li:nth-child(2n) .content {
+    background-color: var(--shadow-color);
+  }
+  ul.ccwebspot.activity li .content {
+    margin-left: 150px;
+    padding: 1em;
+    position: relative;
+  }
+  ul.ccwebspot.activity li .content:before {
+    position: absolute;
+    height: 100%;
+    content: "";
+    border-left: 2px solid var(--secondary-color);
+    left: 0;
+    top: 0;
+    z-index: 1
+  }
+  /* == Scroller == */
+  .scrollbox {
+    overflow: auto;
+  }
+  /* == Calendar  == */
+  .ccwebspot.mcalendar {
+    border-radius: .250em;
+  }
+  .ccwebspot.mcalendar .header {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid var(--grey-color-300);
+  }
+  .ccwebspot.mcalendar .header div {
+    flex: 1 1 0px;
+    min-width: 0;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-size: .875em;
+  }
+  /* Calendar days wrapper */
+  .ccwebspot.mcalendar .content {
+    overflow: hidden;
+  }
+  .ccwebspot.mcalendar .weeks {
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid var(--grey-color-300);
+  }
+  /* Calendar Days */
+  .ccwebspot.mcalendar .weeks .cell {
+    min-width: 0;
+    flex: 0 0 calc(100% / 7);
+    max-width: calc(100% / 7);
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    background: #fff;
+    border-left: 1px solid var(--grey-color-300);
+    -webkit-transition: .25s;
+    transition: .25s;
+    padding: 0;
+    text-decoration: none;
+  }
+  .ccwebspot.mcalendar .weeks .cell:first-child {
+    border-left: 0;
+  }
+  .ccwebspot.mcalendar .weeks .day::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    float: left;
+  }
+  .ccwebspot.mcalendar .weeks .empty {
+    background-color: var(--grey-color-100);
+  }
+  .ccwebspot.mcalendar .weeks .date {
+    position: absolute;
+    line-height: 2rem;
+    top: 2px;
+    right: 5px;
+    font-size: .875rem;
+    color: rgba(0,0,0,0.5);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: .250rem;
+  }
+  /* Current day style */
+  .ccwebspot.mcalendar .weeks .day.today .date {
+    background: var(--primary-color);
+  }
+  .ccwebspot.mcalendar .weeks .day.today .date {
+    color: #fff;
+  }
+  .ccwebspot.mcalendar .progress {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    max-width: 20px;
+    margin: 0 auto;
+    padding-top: 1.75rem;
+  }
+  .ccwebspot.mcalendar .indicator {
+    display: inline-block;
+    margin: 1px;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    border-radius: 6px;
+    background-color: #2B3D4C;
+    font-size: 0;
+    color: transparent;
+  }
+  .ccwebspot.mcalendar .indicator:hover {
+    cursor: pointer;
+  }
+  /* Current events */
+  .ccwebspot.mcalendar .list {
+    background: rgba(255, 255, 255, 0.85);
+    overflow: auto;
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    height: calc(100% - 40px);
+    display: none;
+  }
+  .ccwebspot.mcalendar .list .event {
+    display: block;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .250em;
+    margin-bottom: .5rem;
+    position: relative
+  }
+  .ccwebspot.mcalendar .list .event .description {
+    font-size: .938em;
+    margin: 0.25em 0
+  }
+  .ccwebspot.mcalendar .list .event > a {
+    font-size: .875rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.75)
+  }
+  .ccwebspot.mcalendar .list .event > a:hover {
+    color: rgba(255,255,255,1)
+  }
+  .ccwebspot.mcalendar .list .event .time {
+    font-weight: 500;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  .ccwebspot.mcalendar .list .event .time .start,
+  .ccwebspot.mcalendar .list .event .time .end {
+    font-size: .750rem;
+    display: inline-block;
+  }
+  .ccwebspot.mcalendar .list .event .time .end:not(:empty):before {
+    content: '-';
+    padding: 0 2px;
+  }
+  .ccwebspot.mcalendar .list .date {
+    width: 4.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    font-size: .875em;
+    font-weight: 700;
+    transform: translateY(-50%);
+  }
+  .ccwebspot.mcalendar .list .date > span {
+    display: block;
+  }
+  .ccwebspot.mcalendar .list .today .date {
+    color: #5E35B1;
+  }
+  .ccwebspot.mcalendar .event-item {
+    position: relative;
+    padding: 1rem 1rem .5rem 4.5rem;
+    display: none;
+    border-top: 1px solid var(--grey-color-300);
+    text-align: left;
+  }
+  .ccwebspot.mcalendar .event-item:after {
+    content: '-/-';
+    padding: .5rem 1rem;
+    display: block;
+    margin-bottom: .5rem;
+  }
+  .ccwebspot.mcalendar .event-item .remove {
+    top: 1em;
+    position: absolute;
+    right: 1.5em;
+    color: #fff
+  }
+  .ccwebspot.mcalendar .list .active {
+    display: block;
+  }
+  .ccwebspot.mcalendar .list .active:after {
+    display: none!important;
+  }
+  
+  @media (min-width: 400px) {
+  .ccwebspot.mcalendar .weeks .date {
+    top: 5px;
+    left: 5px;
+    font-size: .750em;
+  }
+  }
+  @media (min-width: 600px) {
+  .ccwebspot.mcalendar .weeks .day {
+    padding-top: 2em;
+    position: relative;
+  }
+  .ccwebspot.mcalendar .weeks .day:before {
+    padding-top: 77%;
+  }
+  .ccwebspot.mcalendar .progress {
+    width: auto;
+    max-width: none;
+    padding-top: .5rem;
+  }
+  .ccwebspot.mcalendar .list .event .time {
+    position: absolute;
+    left: auto;
+    right: .5rem
+  }
+  .ccwebspot.mcalendar .indicator {
+    font-weight: 500;
+    text-align: left;
+    display: block;
+    margin: 0 0 1px 0;
+    width: auto;
+    font-size: .875rem;
+    padding: .875rem;
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  .ccwebspot.mcalendar .indicator.start {
+    border-radius: .250rem 0 0 .250rem;
+  }
+  .ccwebspot.mcalendar .indicator.end {
+    border-radius: 0 .250rem .250rem 0;
+  }
+  .ccwebspot.mcalendar .indicator.full {
+    border-radius: .250rem;
+  }
+  }
+  @media screen and (max-width:769px) {
+  ul.ccwebspot.activity li .intro {
+    float: none;
+    width: auto;
+    text-align: left;
+    padding: .5em 1em;
+    background-color: var(--shadow-color);
+  }
+  ul.ccwebspot.activity li:nth-child(2n) .content {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  ul.ccwebspot.activity li .content {
+    margin-left: 0;
+    padding: .5em 1em;
+    position: relative;
+  }
+  ul.ccwebspot.activity li .intro:after,
+  ul.ccwebspot.activity li .intro:before,
+  ul.ccwebspot.activity li .content:before {
+    display: none
+  }
+  }

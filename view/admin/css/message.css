@@ -1,0 +1,239 @@
+/* == Message == */
+.ccwebspot.message {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: var(--grey-color-100);
+    border-radius: .250rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--grey-color-300);
+    box-shadow: 0 0 2rem 0 var(--shadow-color);
+  }
+  .ccwebspot.message .header {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .ccwebspot.icon.message {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .ccwebspot.icon.message > .icon:not(.close),
+  .ccwebspot.image.message > .image {
+    display: block;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+  }
+  .ccwebspot.icon.message > .icon:not(.close) {
+    width: auto;
+  }
+  .ccwebspot.icon.message > .content {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .ccwebspot.message > .close.icon {
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    top: .750em;
+    right: .5em;
+    opacity: .7;
+    transition: opacity .1s ease;
+  }
+  .ccwebspot.compact.message {
+    display: inline-flex;
+  }
+  /* == Colors == */
+  .ccwebspot.primary.message {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color-inverted);
+  }
+  .ccwebspot.secondary.message {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-inverted);
+  }
+  .ccwebspot.positive.message {
+    background-color: var(--positive-color);
+    border: 1px solid var(--positive-color);
+    color: var(--positive-color-inverted);
+  }
+  .ccwebspot.negative.message {
+    background-color: var(--negative-color);
+    border: 1px solid var(--negative-color);
+    color: var(--negative-color-inverted);
+  }
+  .ccwebspot.primary.inverted.message {
+    background-color: var(--primary-color-inverted);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  .ccwebspot.secondary.inverted.message {
+    background-color: var(--secondary-color-inverted);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  .ccwebspot.positive.inverted.message {
+    background-color: var(--positive-color-inverted);
+    border: 1px solid var(--positive-color);
+    color: var(--positive-color);
+  }
+  .ccwebspot.negative.inverted.message {
+    background-color: var(--negative-color-inverted);
+    border: 1px solid var(--negative-color);
+    color: var(--negative-color);
+  }
+  /* == Notices == */
+  #ccwebspot-overlay {
+    position: fixed;
+    width: auto;
+    right: 1rem;
+    top: 2rem;
+    z-index: 5000;
+    /*-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+  }
+  .ccwebspot.notice {
+    max-width: 100%;
+    min-width: 300px;
+    position: relative;
+    border-radius: .250rem;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+  .ccwebspot.notice .content {
+    padding: 1.25rem;
+    margin-left: 3rem;
+  }
+  .ccwebspot.notice:before {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    position: absolute;
+    border-radius: .250rem;
+    left: 1rem;
+    top: -1.25rem;
+    font-family: 'ccwebspotIcons';
+    content: "\e923";
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.42), 0px 4px 25px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px -5px rgba(0, 0, 0, 0.2);
+    z-index: 3
+  }
+  .ccwebspot.notice .ccwebspot.progress,
+  .ccwebspot.notice .ccwebspot.progress.attached .bar {
+    border-radius: .250rem;
+  }
+  .ccwebspot.notice span {
+    font-size: 1rem;
+    display: block;
+    font-weight: 600;
+  }
+  .ccwebspot.notice .text,
+  .ccwebspot.notice p {
+    font-size: .875rem;
+    font-weight: 400;
+  }
+  .ccwebspot.notice a.notice-close {
+    opacity: 0;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .ccwebspot.notice:hover a.notice-close {
+    opacity: 1;
+  }
+  .ccwebspot.notice.success {
+    background-color: var(--positive-color-hover);
+    color: var(--positive-color-inverted);
+  }
+  .ccwebspot.notice.success:before {
+    color: var(--positive-color);
+  }
+  .ccwebspot.notice.info {
+    background-color: var(--info-color-hover);
+    color: var(--info-color-inverted);
+  }
+  .ccwebspot.notice.info:before {
+    color: var(--info-color);
+  }
+  .ccwebspot.notice.alert {
+    background-color: var(--alert-color-hover);
+    color: var(--alert-color-inverted);
+  }
+  .ccwebspot.notice.alert:before {
+    color: var(--alert-color);
+  }
+  .ccwebspot.notice.error {
+    background-color: var(--negative-color-hover);
+    color: var(--negative-color-inverted);
+  }
+  .ccwebspot.notice.error:before {
+    color: var(--negative-color);
+  }
+  /* == Notes == */
+  .ccwebspot.notes.content {
+    font-family: 'Kalam';
+    position: relative;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 1px) 0 36px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 1px) 0 36px;
+    background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 1px) 0 36px;
+    background-size: 100% 36px;
+    font-size: 1.5rem;
+    line-height: 2.250rem;
+    margin: 0;
+    min-height: 628px;
+    color: rgba(0, 0, 0, 0.85);
+    padding:0;
+    padding-left:2rem;
+    font-weight: 400;
+  }
+  .ccwebspot.notes.content p {
+    margin:0
+  }
+  .ccwebspot.notes.content::before,
+  .ccwebspot.notes.content::after {
+    content: "";
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -.5rem;
+    left: 1rem;
+    height: 100%;
+  }
+  .ccwebspot.notes.content::after {
+    left: 1.25rem;
+  }
+  /* == Variation == */
+  .ccwebspot.heading.message {
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+  }
+  .ccwebspot.basic.message {
+    padding: 0;
+  }
+  .ccwebspot.simple.message {
+    border: 0;
+    box-shadow: none;
+  }
+  .ccwebspot.transparent.message {
+    background-color: transparent;
+  }
+  .ccwebspot.attached.message {
+    margin: 0;
+  }
+  .ccwebspot.top.attached.message {
+    margin-top: 0;
+  }
+  .ccwebspot.bottom.attached.message {
+    margin-bottom: 0;
+  }
+  /* == Size == */
+  .ccwebspot.small.message {
+    font-size: .875rem
+  }
+  .ccwebspot.message {
+    font-size: 1rem
+  }
